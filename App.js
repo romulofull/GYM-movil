@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { View, Text, Picker, Image, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, Image, StyleSheet, ScrollView } from 'react-native';
+import { Picker } from '@react-native-picker/picker';
 import Ejercicios from './Ejercicios';
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
         <Picker.Item label="Abdominales" value="abdominales" />
         <Picker.Item label="Glúteos" value="gluteos" />
         <Picker.Item label="Piernas" value="piernas" />
+        <Picker.Item label="Adultomayor" value="adultomayor"/>
       </Picker>
 
       <Ejercicios parteDelCuerpo={parteDelCuerpo} />
